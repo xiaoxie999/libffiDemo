@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81F670CD268C1EF100DD5947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670CC268C1EF100DD5947 /* AppDelegate.m */; };
+		81F670D0268C1EF100DD5947 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670CF268C1EF100DD5947 /* SceneDelegate.m */; };
+		81F670D3268C1EF100DD5947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670D2268C1EF100DD5947 /* ViewController.m */; };
+		81F670D6268C1EF100DD5947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F670D4268C1EF100DD5947 /* Main.storyboard */; };
+		81F670D8268C1EF300DD5947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F670D7268C1EF300DD5947 /* Assets.xcassets */; };
+		81F670DB268C1EF300DD5947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F670D9268C1EF300DD5947 /* LaunchScreen.storyboard */; };
+		81F670DE268C1EF300DD5947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670DD268C1EF300DD5947 /* main.m */; };
+		81F670E8268C1EF400DD5947 /* libffiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670E7268C1EF400DD5947 /* libffiDemoTests.m */; };
+		81F670F3268C1EF400DD5947 /* libffiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670F2268C1EF400DD5947 /* libffiDemoUITests.m */; };
+		81F6710C268C1F8B00DD5947 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F6710B268C1F8B00DD5947 /* libffi.a */; };
+		81F67112268C87E900DD5947 /* HookBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67111268C87E900DD5947 /* HookBlock.m */; };
+		81F67115268C8AD500DD5947 /* HookMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67114268C8AD500DD5947 /* HookMethod.m */; };
+		81F6711F268D6AE000DD5947 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F6711E268D6AE000DD5947 /* Util.m */; };
+		81F67122268D737A00DD5947 /* HookC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67121268D737A00DD5947 /* HookC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81F670E4268C1EF300DD5947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F670C0268C1EF100DD5947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81F670C7268C1EF100DD5947;
+			remoteInfo = libffiDemo;
+		};
+		81F670EF268C1EF400DD5947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81F670C0268C1EF100DD5947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81F670C7268C1EF100DD5947;
+			remoteInfo = libffiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81F670C8268C1EF100DD5947 /* libffiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libffiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F670CB268C1EF100DD5947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		81F670CC268C1EF100DD5947 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		81F670CE268C1EF100DD5947 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		81F670CF268C1EF100DD5947 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		81F670D1268C1EF100DD5947 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		81F670D2268C1EF100DD5947 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81F670D5268C1EF100DD5947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81F670D7268C1EF300DD5947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81F670DA268C1EF300DD5947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81F670DC268C1EF300DD5947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F670DD268C1EF300DD5947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81F670E3268C1EF300DD5947 /* libffiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libffiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F670E7268C1EF400DD5947 /* libffiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libffiDemoTests.m; sourceTree = "<group>"; };
+		81F670E9268C1EF400DD5947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F670EE268C1EF400DD5947 /* libffiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libffiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F670F2268C1EF400DD5947 /* libffiDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libffiDemoUITests.m; sourceTree = "<group>"; };
+		81F670F4268C1EF400DD5947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F67103268C1F8B00DD5947 /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		81F67104268C1F8B00DD5947 /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		81F67105268C1F8B00DD5947 /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		81F67106268C1F8B00DD5947 /* ffitarget_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_armv7.h; sourceTree = "<group>"; };
+		81F67107268C1F8B00DD5947 /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		81F67108268C1F8B00DD5947 /* ffi_armv7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_armv7.h; sourceTree = "<group>"; };
+		81F67109268C1F8B00DD5947 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		81F6710A268C1F8B00DD5947 /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		81F6710B268C1F8B00DD5947 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
+		81F67110268C87E900DD5947 /* HookBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookBlock.h; sourceTree = "<group>"; };
+		81F67111268C87E900DD5947 /* HookBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookBlock.m; sourceTree = "<group>"; };
+		81F67113268C8AD500DD5947 /* HookMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookMethod.h; sourceTree = "<group>"; };
+		81F67114268C8AD500DD5947 /* HookMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookMethod.m; sourceTree = "<group>"; };
+		81F6711C268D665000DD5947 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		81F6711D268D6AE000DD5947 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		81F6711E268D6AE000DD5947 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		81F67120268D737A00DD5947 /* HookC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookC.h; sourceTree = "<group>"; };
+		81F67121268D737A00DD5947 /* HookC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81F670C5268C1EF100DD5947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F6710C268C1F8B00DD5947 /* libffi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670E0268C1EF300DD5947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670EB268C1EF400DD5947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81F670BF268C1EF100DD5947 = {
+			isa = PBXGroup;
+			children = (
+				81F670CA268C1EF100DD5947 /* libffiDemo */,
+				81F670E6268C1EF400DD5947 /* libffiDemoTests */,
+				81F670F1268C1EF400DD5947 /* libffiDemoUITests */,
+				81F670C9268C1EF100DD5947 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81F670C9268C1EF100DD5947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81F670C8268C1EF100DD5947 /* libffiDemo.app */,
+				81F670E3268C1EF300DD5947 /* libffiDemoTests.xctest */,
+				81F670EE268C1EF400DD5947 /* libffiDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81F670CA268C1EF100DD5947 /* libffiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				81F67100268C1F8B00DD5947 /* libffiLib */,
+				81F670CB268C1EF100DD5947 /* AppDelegate.h */,
+				81F670CC268C1EF100DD5947 /* AppDelegate.m */,
+				81F670CE268C1EF100DD5947 /* SceneDelegate.h */,
+				81F670CF268C1EF100DD5947 /* SceneDelegate.m */,
+				81F670D1268C1EF100DD5947 /* ViewController.h */,
+				81F670D2268C1EF100DD5947 /* ViewController.m */,
+				81F6711C268D665000DD5947 /* Header.h */,
+				81F6711D268D6AE000DD5947 /* Util.h */,
+				81F6711E268D6AE000DD5947 /* Util.m */,
+				81F67110268C87E900DD5947 /* HookBlock.h */,
+				81F67111268C87E900DD5947 /* HookBlock.m */,
+				81F67113268C8AD500DD5947 /* HookMethod.h */,
+				81F67114268C8AD500DD5947 /* HookMethod.m */,
+				81F67120268D737A00DD5947 /* HookC.h */,
+				81F67121268D737A00DD5947 /* HookC.m */,
+				81F670D4268C1EF100DD5947 /* Main.storyboard */,
+				81F670D7268C1EF300DD5947 /* Assets.xcassets */,
+				81F670D9268C1EF300DD5947 /* LaunchScreen.storyboard */,
+				81F670DC268C1EF300DD5947 /* Info.plist */,
+				81F670DD268C1EF300DD5947 /* main.m */,
+			);
+			path = libffiDemo;
+			sourceTree = "<group>";
+		};
+		81F670E6268C1EF400DD5947 /* libffiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				81F670E7268C1EF400DD5947 /* libffiDemoTests.m */,
+				81F670E9268C1EF400DD5947 /* Info.plist */,
+			);
+			path = libffiDemoTests;
+			sourceTree = "<group>";
+		};
+		81F670F1268C1EF400DD5947 /* libffiDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81F670F2268C1EF400DD5947 /* libffiDemoUITests.m */,
+				81F670F4268C1EF400DD5947 /* Info.plist */,
+			);
+			path = libffiDemoUITests;
+			sourceTree = "<group>";
+		};
+		81F67100268C1F8B00DD5947 /* libffiLib */ = {
+			isa = PBXGroup;
+			children = (
+				81F67101268C1F8B00DD5947 /* include */,
+				81F6710B268C1F8B00DD5947 /* libffi.a */,
+			);
+			path = libffiLib;
+			sourceTree = "<group>";
+		};
+		81F67101268C1F8B00DD5947 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				81F67102268C1F8B00DD5947 /* ffi */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		81F67102268C1F8B00DD5947 /* ffi */ = {
+			isa = PBXGroup;
+			children = (
+				81F67103268C1F8B00DD5947 /* ffitarget_arm64.h */,
+				81F67104268C1F8B00DD5947 /* ffitarget.h */,
+				81F67105268C1F8B00DD5947 /* ffitarget_x86_64.h */,
+				81F67106268C1F8B00DD5947 /* ffitarget_armv7.h */,
+				81F67107268C1F8B00DD5947 /* ffi_x86_64.h */,
+				81F67108268C1F8B00DD5947 /* ffi_armv7.h */,
+				81F67109268C1F8B00DD5947 /* ffi.h */,
+				81F6710A268C1F8B00DD5947 /* ffi_arm64.h */,
+			);
+			path = ffi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81F670C7268C1EF100DD5947 /* libffiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F670F7268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemo" */;
+			buildPhases = (
+				81F670C4268C1EF100DD5947 /* Sources */,
+				81F670C5268C1EF100DD5947 /* Frameworks */,
+				81F670C6268C1EF100DD5947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libffiDemo;
+			productName = libffiDemo;
+			productReference = 81F670C8268C1EF100DD5947 /* libffiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81F670E2268C1EF300DD5947 /* libffiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F670FA268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemoTests" */;
+			buildPhases = (
+				81F670DF268C1EF300DD5947 /* Sources */,
+				81F670E0268C1EF300DD5947 /* Frameworks */,
+				81F670E1268C1EF300DD5947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F670E5268C1EF300DD5947 /* PBXTargetDependency */,
+			);
+			name = libffiDemoTests;
+			productName = libffiDemoTests;
+			productReference = 81F670E3268C1EF300DD5947 /* libffiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81F670ED268C1EF400DD5947 /* libffiDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F670FD268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemoUITests" */;
+			buildPhases = (
+				81F670EA268C1EF400DD5947 /* Sources */,
+				81F670EB268C1EF400DD5947 /* Frameworks */,
+				81F670EC268C1EF400DD5947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F670F0268C1EF400DD5947 /* PBXTargetDependency */,
+			);
+			name = libffiDemoUITests;
+			productName = libffiDemoUITests;
+			productReference = 81F670EE268C1EF400DD5947 /* libffiDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81F670C0268C1EF100DD5947 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					81F670C7268C1EF100DD5947 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					81F670E2268C1EF300DD5947 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 81F670C7268C1EF100DD5947;
+					};
+					81F670ED268C1EF400DD5947 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 81F670C7268C1EF100DD5947;
+					};
+				};
+			};
+			buildConfigurationList = 81F670C3268C1EF100DD5947 /* Build configuration list for PBXProject "libffiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81F670BF268C1EF100DD5947;
+			productRefGroup = 81F670C9268C1EF100DD5947 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81F670C7268C1EF100DD5947 /* libffiDemo */,
+				81F670E2268C1EF300DD5947 /* libffiDemoTests */,
+				81F670ED268C1EF400DD5947 /* libffiDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81F670C6268C1EF100DD5947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F670DB268C1EF300DD5947 /* LaunchScreen.storyboard in Resources */,
+				81F670D8268C1EF300DD5947 /* Assets.xcassets in Resources */,
+				81F670D6268C1EF100DD5947 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670E1268C1EF300DD5947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670EC268C1EF400DD5947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81F670C4268C1EF100DD5947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F670D3268C1EF100DD5947 /* ViewController.m in Sources */,
+				81F67112268C87E900DD5947 /* HookBlock.m in Sources */,
+				81F670CD268C1EF100DD5947 /* AppDelegate.m in Sources */,
+				81F670DE268C1EF300DD5947 /* main.m in Sources */,
+				81F67115268C8AD500DD5947 /* HookMethod.m in Sources */,
+				81F67122268D737A00DD5947 /* HookC.m in Sources */,
+				81F670D0268C1EF100DD5947 /* SceneDelegate.m in Sources */,
+				81F6711F268D6AE000DD5947 /* Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670DF268C1EF300DD5947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F670E8268C1EF400DD5947 /* libffiDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F670EA268C1EF400DD5947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F670F3268C1EF400DD5947 /* libffiDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81F670E5268C1EF300DD5947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81F670C7268C1EF100DD5947 /* libffiDemo */;
+			targetProxy = 81F670E4268C1EF300DD5947 /* PBXContainerItemProxy */;
+		};
+		81F670F0268C1EF400DD5947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81F670C7268C1EF100DD5947 /* libffiDemo */;
+			targetProxy = 81F670EF268C1EF400DD5947 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81F670D4268C1EF100DD5947 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81F670D5268C1EF100DD5947 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81F670D9268C1EF300DD5947 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81F670DA268C1EF300DD5947 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81F670F5268C1EF400DD5947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		81F670F6268C1EF400DD5947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81F670F8268C1EF400DD5947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libffiDemo/libffiLib/include";
+				INFOPLIST_FILE = libffiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libffiDemo/libffiLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81F670F9268C1EF400DD5947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libffiDemo/libffiLib/include";
+				INFOPLIST_FILE = libffiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libffiDemo/libffiLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81F670FB268C1EF400DD5947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = libffiDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libffiDemo.app/libffiDemo";
+			};
+			name = Debug;
+		};
+		81F670FC268C1EF400DD5947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = libffiDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libffiDemo.app/libffiDemo";
+			};
+			name = Release;
+		};
+		81F670FE268C1EF400DD5947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = libffiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libffiDemo;
+			};
+			name = Debug;
+		};
+		81F670FF268C1EF400DD5947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = libffiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yyds.libffiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = libffiDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81F670C3268C1EF100DD5947 /* Build configuration list for PBXProject "libffiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F670F5268C1EF400DD5947 /* Debug */,
+				81F670F6268C1EF400DD5947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F670F7268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F670F8268C1EF400DD5947 /* Debug */,
+				81F670F9268C1EF400DD5947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F670FA268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F670FB268C1EF400DD5947 /* Debug */,
+				81F670FC268C1EF400DD5947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81F670FD268C1EF400DD5947 /* Build configuration list for PBXNativeTarget "libffiDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81F670FE268C1EF400DD5947 /* Debug */,
+				81F670FF268C1EF400DD5947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81F670C0268C1EF100DD5947 /* Project object */;
+}
