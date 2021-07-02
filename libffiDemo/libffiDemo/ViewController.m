@@ -8,7 +8,8 @@
 #import "ViewController.h"
 #import "HookBlock.h"
 #import "HookMethod.h"
-#import "HookC.h"
+#import "CallCFunc.h"
+#import "CallOCFunc.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,8 @@
     
     [self testHookBlock];
     [self testHookMethod];
-    [self testHookC];
+    [self testCallC];
+    [self testCallOC];
 }
 
 - (void)testHookBlock {
@@ -48,10 +50,14 @@
     [self sum:10 and:20];
 }
 
-- (void)testHookC {
+- (void)testCallC {
     
-    [HookC callCFunc:10 b:2];
-    [HookC callUserDefinedCFuncWith:3 b:2 c:1];
+    [CallCFunc callCFunc:10 b:2];
+    [CallCFunc callUserDefinedCFuncWith:3 b:2 c:1];
+}
+
+- (void)testCallOC {
+    [CallOCFunc libffiCallOCFunc];
 }
 
 - (IBAction)run:(UIButton *)sender {

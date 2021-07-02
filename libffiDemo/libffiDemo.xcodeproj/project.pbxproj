@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81D9DF72268EC01400BAAC04 /* CallOCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9DF71268EC01400BAAC04 /* CallOCFunc.m */; };
 		81F670CD268C1EF100DD5947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670CC268C1EF100DD5947 /* AppDelegate.m */; };
 		81F670D0268C1EF100DD5947 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670CF268C1EF100DD5947 /* SceneDelegate.m */; };
 		81F670D3268C1EF100DD5947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F670D2268C1EF100DD5947 /* ViewController.m */; };
@@ -20,7 +21,7 @@
 		81F67112268C87E900DD5947 /* HookBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67111268C87E900DD5947 /* HookBlock.m */; };
 		81F67115268C8AD500DD5947 /* HookMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67114268C8AD500DD5947 /* HookMethod.m */; };
 		81F6711F268D6AE000DD5947 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F6711E268D6AE000DD5947 /* Util.m */; };
-		81F67122268D737A00DD5947 /* HookC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67121268D737A00DD5947 /* HookC.m */; };
+		81F67122268D737A00DD5947 /* CallCFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F67121268D737A00DD5947 /* CallCFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81D9DF70268EC01400BAAC04 /* CallOCFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallOCFunc.h; sourceTree = "<group>"; };
+		81D9DF71268EC01400BAAC04 /* CallOCFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOCFunc.m; sourceTree = "<group>"; };
 		81F670C8268C1EF100DD5947 /* libffiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libffiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F670CB268C1EF100DD5947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81F670CC268C1EF100DD5947 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,8 +78,8 @@
 		81F6711C268D665000DD5947 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		81F6711D268D6AE000DD5947 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		81F6711E268D6AE000DD5947 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
-		81F67120268D737A00DD5947 /* HookC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookC.h; sourceTree = "<group>"; };
-		81F67121268D737A00DD5947 /* HookC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookC.m; sourceTree = "<group>"; };
+		81F67120268D737A00DD5947 /* CallCFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallCFunc.h; sourceTree = "<group>"; };
+		81F67121268D737A00DD5947 /* CallCFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallCFunc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +145,10 @@
 				81F67111268C87E900DD5947 /* HookBlock.m */,
 				81F67113268C8AD500DD5947 /* HookMethod.h */,
 				81F67114268C8AD500DD5947 /* HookMethod.m */,
-				81F67120268D737A00DD5947 /* HookC.h */,
-				81F67121268D737A00DD5947 /* HookC.m */,
+				81F67120268D737A00DD5947 /* CallCFunc.h */,
+				81F67121268D737A00DD5947 /* CallCFunc.m */,
+				81D9DF70268EC01400BAAC04 /* CallOCFunc.h */,
+				81D9DF71268EC01400BAAC04 /* CallOCFunc.m */,
 				81F670D4268C1EF100DD5947 /* Main.storyboard */,
 				81F670D7268C1EF300DD5947 /* Assets.xcassets */,
 				81F670D9268C1EF300DD5947 /* LaunchScreen.storyboard */,
@@ -337,7 +342,8 @@
 				81F670CD268C1EF100DD5947 /* AppDelegate.m in Sources */,
 				81F670DE268C1EF300DD5947 /* main.m in Sources */,
 				81F67115268C8AD500DD5947 /* HookMethod.m in Sources */,
-				81F67122268D737A00DD5947 /* HookC.m in Sources */,
+				81D9DF72268EC01400BAAC04 /* CallOCFunc.m in Sources */,
+				81F67122268D737A00DD5947 /* CallCFunc.m in Sources */,
 				81F670D0268C1EF100DD5947 /* SceneDelegate.m in Sources */,
 				81F6711F268D6AE000DD5947 /* Util.m in Sources */,
 			);
@@ -537,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libffiDemo/libffiLib/include";

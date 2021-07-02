@@ -49,6 +49,7 @@ void invokeOriginalBlockOrMethod(ffi_cif *cif, void *ret, void **args, void *inv
     }
 }
 
+/// 参考: [https://nshipster.cn/type-encodings/]
 + (ffi_type *)_ffi_typeForTypeEncoding:(const char *)encoding {
     if (!strcmp(encoding, "c")) {
         return &ffi_type_schar;
@@ -58,7 +59,11 @@ void invokeOriginalBlockOrMethod(ffi_cif *cif, void *ret, void **args, void *inv
     }
     else if (!strcmp(encoding, "@")) {
         return &ffi_type_pointer;
-    }else {
+    }
+    else if (!strcmp(encoding, "f")) {
+        return &ffi_type_float;
+    }
+    else {
         return &ffi_type_pointer;
     }
 }
